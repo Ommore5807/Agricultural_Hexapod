@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="02/05/24||12:06:40" using="Simscape Multibody Link Version 7.4" from="SolidWorks 31.2.1"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem_steel_leg_copy" uid="Assem_steel_leg_copy" version="1275">
+<AssemblyFile name="Assem_steel_leg_copy.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="STRAP HINGE right-2" uid="STRAP HINGE right-2" entityUid="STRAP HINGE right*:*Default">
+<Transform>
+<Rotation>1.226980918289518e-14 1 1.658158476507938e-14 -0.57804127457312915 2.062315412455851e-14 -0.81600752747132965 -0.81600752747132965 4.2741626183044478e-16 0.57804127457312915</Rotation>
+<Translation>-0.64307599957964245 -0.87208541887402158 -0.44099681680035813</Translation>
+</Transform>
+</Instance>
+<Instance name="u frame channel 2-2" uid="u frame channel 2-2" grounded="true" entityUid="u frame channel 2*:*Default">
+<Transform>
+<Rotation>1 -2.0459328675670422e-14 6.2195869193163311e-16 2.0459137573330455e-14 0.99813479842186692 -0.061048539534860086 6.2821352191535828e-16 0.061048539534860086 0.99813479842186692</Rotation>
+<Translation>-0.51052400609777926 0.31628981657428656 -0.45498325025167247</Translation>
+</Transform>
+</Instance>
+<Instance name="galvanized_steel_leg_1400_mm_lower-1" uid="galvanized_steel_leg_1400_mm_lower-1" entityUid="galvanized_steel_leg_1400_mm_lower*:*Default">
+<Transform>
+<Rotation>-1.1960177430358723e-14 -1 1.6944464803838006e-14 0.55379168263865985 -2.073234443125307e-14 -0.83265525413597319 0.83265525413597319 -5.7500090265767861e-16 0.55379168263865985</Rotation>
+<Translation>-0.51787177422275843 -0.87984805128121635 -0.422956462102904</Translation>
+</Transform>
+</Instance>
+<Instance name="galvanized_steel_leg_1400_mm_upper-1" uid="galvanized_steel_leg_1400_mm_upper-1" entityUid="galvanized_steel_leg_1400_mm_upper*:*Default">
+<Transform>
+<Rotation>-1.6581584765078654e-14 -1 -1.2269809182895592e-14 0.81600752747132921 -2.0623154124558147e-14 0.57804127457312937 -0.57804127457312937 -4.2741626183119483e-16 0.81600752747132921</Rotation>
+<Translation>-0.51687400609775658 -0.86523101875511177 -0.42023949395651145</Translation>
+</Transform>
+</Instance>
+<Instance name="STRAP HINGE right-1" uid="STRAP HINGE right-1" entityUid="STRAP HINGE right*:*Default">
+<Transform>
+<Rotation>-1.2312199870745388e-15 1 2.0459328675670463e-14 0.061048539534860211 2.0497492592141953e-14 -0.99813479842186692 -0.99813479842186681 0 -0.061048539534860211</Rotation>
+<Translation>-0.64307599957966721 0.2036175048826103 1.0649414880815975</Translation>
+</Transform>
+</Instance>
+<Instance name="STRAP HINGE-1" uid="STRAP HINGE-1" entityUid="STRAP HINGE*:*Default">
+<Transform>
+<Rotation>1.2269809182894849e-14 1 1.6749384324980901e-14 -0.57804127457312893 2.0760079828544332e-14 -0.81600752747132965 -0.81600752747132965 3.3042119035189373e-16 0.57804127457312893</Rotation>
+<Translation>-0.64307599957966943 0.19191887349025971 1.0605807813944856</Translation>
+</Transform>
+</Instance>
+<Instance name="STRAP HINGE-2" uid="STRAP HINGE-2" entityUid="STRAP HINGE*:*Default">
+<Transform>
+<Rotation>1.6989644684739353e-14 1 -1.1960166581954476e-14 -0.83265525413597319 2.0769957688710776e-14 0.55379168263865985 0.55379168263865985 5.4997162741110922e-16 0.83265525413597319</Rotation>
+<Translation>-0.64307599957964734 -0.89119162809605645 -0.42310462518488023</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>STRAP HINGE right-1</Uid>
+</InstancePath>
+<Position>-0.015131747612520785 0.15513422535689009 0.011135540619431061</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>STRAP HINGE-1</Uid>
+</InstancePath>
+<Position>-0.015131747612520563 0.15845285535689013 0.011135540619480633</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE right-1</Uid>
+</InstancePath>
+<Position>-0.015131747612520785 0.15513422535689009 0.011135540619431061</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE-1</Uid>
+</InstancePath>
+<Position>-0.020969479994958573 0.15513422535689009 0.0053670303601056069</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>u frame channel 2-2</Uid>
+</InstancePath>
+<Position>0 -0.025040000000000007 1.9391000000000005</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE right-1</Uid>
+</InstancePath>
+<Position>-0.16258948764753556 0.15570103905689003 0.0053670303600560354</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE right-1</Uid>
+</InstancePath>
+<Position>-0.021089195771895719 0.097271993481889862 0.017092988778806051</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>u frame channel 2-2</Uid>
+</InstancePath>
+<Position>-0.025399999999999978 0 1.9391000000000007</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Coincident name="Coincident8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>galvanized_steel_leg_1400_mm_upper-1</Uid>
+</InstancePath>
+<Position>0.0013000000000001899 0.0249999999999998 1.6877999999999997</Position>
+<Axis>-1 -1.2143064331837743e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE-1</Uid>
+</InstancePath>
+<Position>0.13232599242254406 0.15570103905689014 0.0053670303601056624</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE right-1</Uid>
+</InstancePath>
+<Position>-0.021089195771895719 0.097271993481889862 0.017092988778806051</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>galvanized_steel_leg_1400_mm_upper-1</Uid>
+</InstancePath>
+<Position>0 -1.1102230246251565e-16 -0.069835977759928447</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Coincident name="Coincident14">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>galvanized_steel_leg_1400_mm_upper-1</Uid>
+</InstancePath>
+<Position>0 -1.1102230246251565e-16 1.8288</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE-1</Uid>
+</InstancePath>
+<Position>-0.0093632373530960766 0.1409638828568901 0.0053670303601056624</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric9">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>STRAP HINGE-2</Uid>
+</InstancePath>
+<Position>-0.015131747612520674 0.15845285535689013 0.011135540619480522</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>STRAP HINGE right-2</Uid>
+</InstancePath>
+<Position>-0.015131747612520785 0.1551342253568902 0.011135540619431061</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident17">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE-2</Uid>
+</InstancePath>
+<Position>-0.020969479994958684 0.15513422535689014 0.0053670303601055513</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE right-2</Uid>
+</InstancePath>
+<Position>-0.015131747612520785 0.1551342253568902 0.011135540619431061</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident19">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>galvanized_steel_leg_1400_mm_upper-1</Uid>
+</InstancePath>
+<Position>-0.0010400000000000409 -0.025000000000000133 0.14100000000000001</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE right-2</Uid>
+</InstancePath>
+<Position>-0.019497394210750918 0.15570103905689009 0.0074453472600559678</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident20">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>galvanized_steel_leg_1400_mm_upper-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE right-2</Uid>
+</InstancePath>
+<Position>-0.020900257871895755 0.1409638828568901 0.0053670303600560354</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE right-2</Uid>
+</InstancePath>
+<Position>-0.021089195771895719 0.097271993481889973 0.017092988778805995</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>galvanized_steel_leg_1400_mm_upper-1</Uid>
+</InstancePath>
+<Position>0 -1.1102230246251565e-16 -0.069835977759928447</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Coincident name="Coincident23">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>galvanized_steel_leg_1400_mm_lower-1</Uid>
+</InstancePath>
+<Position>0.0010400000000000409 -0.024999999999999911 0.14100000000000007</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE-2</Uid>
+</InstancePath>
+<Position>-0.010766101014241136 0.15570103905689009 0.0074453472601055948</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance12">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>galvanized_steel_leg_1400_mm_lower-1</Uid>
+</InstancePath>
+<Position>0 1.1102230246251565e-16 -0.069464194038323934</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE right-2</Uid>
+</InstancePath>
+<Position>-0.015131747612520785 0.1551342253568902 0.011135540619431061</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Coincident name="Coincident25">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>galvanized_steel_leg_1400_mm_lower-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>STRAP HINGE-2</Uid>
+</InstancePath>
+<Position>-0.0093632373530961321 0.1409638828568901 0.0053670303601055513</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="Distance13">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>STRAP HINGE right-1</Uid>
+</InstancePath>
+<Position>-0.015131747612520785 0.15513422535689009 0.011135540619431061</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>u frame channel 2-2</Uid>
+</InstancePath>
+<Position>0 0 1.9391000000000007</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="STRAP HINGE right" uid="STRAP HINGE right*:*Default" version="214">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="STRAP HINGE right.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.014956761204445635</Mass>
+<CenterOfMass>-0.05983231571479572 0.12655319009230109 0.0077527617228084359</CenterOfMass>
+<Inertia>2.5440742964887014e-06 2.7740659901597649e-05 3.0079728329793273e-05 1.2064877960688739e-08 -9.033781217400395e-07 1.5522302227700636e-07</Inertia>
+</MassProperties>
+<GeometryFile name="STRAP HINGE right_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="STRAP HINGE" uid="STRAP HINGE*:*Default" version="190">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="STRAP HINGE.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.012408569994258293</Mass>
+<CenterOfMass>0.038748683429637797 0.12679111892121817 0.0070578985613756109</CenterOfMass>
+<Inertia>2.4843185112259621e-06 2.1550038803628779e-05 2.3918268063698436e-05 3.5156043349901401e-11 4.3883229066356817e-07 4.0617978424640706e-09</Inertia>
+</MassProperties>
+<GeometryFile name="STRAP HINGE_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="galvanized_steel_leg_1400_mm_lower" uid="galvanized_steel_leg_1400_mm_lower*:*Default" version="243">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="galvanized_steel_leg_1400_mm_lower.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.45234977908889051</Mass>
+<CenterOfMass>-5.2808052666888588e-07 -3.4704036453176347e-08 0.92703866179978478</CenterOfMass>
+<Inertia>0.12279111676299191 0.12279070354265841 0.00011982451763474492 1.0156565187054644e-09 4.4411127987423449e-09 1.1824767982149965e-11</Inertia>
+</MassProperties>
+<GeometryFile name="galvanized_steel_leg_1400_mm_lower_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="galvanized_steel_leg_1400_mm_upper" uid="galvanized_steel_leg_1400_mm_upper*:*Default" version="293">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="galvanized_steel_leg_1400_mm_upper.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.44552997981318476</Mass>
+<CenterOfMass>-6.333974107628587e-07 -2.8262386901795337e-08 0.91371390256384288</CenterOfMass>
+<Inertia>0.11753786629495321 0.1175371153023539 0.00011800850623401877 -1.6827966164036178e-08 7.2240985708568486e-09 -1.0390241676879684e-10</Inertia>
+</MassProperties>
+<GeometryFile name="galvanized_steel_leg_1400_mm_upper_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="u frame channel 2" uid="u frame channel 2*:*Default" version="390">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="u frame channel 2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.85424182442586538</Mass>
+<CenterOfMass>0 1.2201322521730608e-05 0.96927064165631693</CenterOfMass>
+<Inertia>0.26783138147187829 0.26786160184885294 0.00066196040248895293 -5.7268968486443165e-06 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="u frame channel 2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="02/05/24||14:51:23" using="Simscape Multibody Link Version 7.4" from="SolidWorks 31.2.1"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="demo_assembly" uid="demo_assembly" version="395">
+<AssemblyFile name="demo_assembly.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="demo_leg_upper-1" uid="demo_leg_upper-1" entityUid="demo_leg_upper*:*Default">
+<Transform>
+<Rotation>1 -2.0731081124573008e-16 -1.6889294784233731e-16 0 0.63158454189061064 -0.77530701431421833 2.6739970119354287e-16 0.77530701431421833 0.63158454189061064</Rotation>
+<Translation>0.25789627083651501 -0.71776988404659248 -0.17146011435849129</Translation>
+</Transform>
+</Instance>
+<Instance name="demo_leg_lower-1" uid="demo_leg_lower-1" entityUid="demo_leg_lower*:*Default">
+<Transform>
+<Rotation>1 2.0240692247753478e-16 -1.1461300774673151e-16 -1.2948490788017859e-16 0.89373874799042274 0.44858784016122399 1.932313702348581e-16 -0.44858784016122399 0.89373874799042274</Rotation>
+<Translation>0.25789627083651429 -2.3580489517325702 0.61087155788834968</Translation>
+</Transform>
+</Instance>
+<Instance name="demo_leg_chassis-1" uid="demo_leg_chassis-1" grounded="true" entityUid="demo_leg_chassis*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.25789627083645428 0.49968023532514738 -0.47556372447761153</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>demo_leg_chassis-1</Uid>
+</InstancePath>
+<Position>-0.030539999999939033 -0.075039999999999996 1.706478937610683</Position>
+<Axis>1 0 2.6742910729344358e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>demo_leg_upper-1</Uid>
+</InstancePath>
+<Position>-0.017459999999999976 1.8088000000000002 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>demo_leg_chassis-1</Uid>
+</InstancePath>
+<Position>-0.030539999999939033 -0.075039999999999996 1.706478937610683</Position>
+<Axis>1 0 2.6742910729344358e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>demo_leg_upper-1</Uid>
+</InstancePath>
+<Position>-0.017459999999999976 1.8088000000000002 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>demo_leg_upper-1</Uid>
+</InstancePath>
+<Position>-0.019460000000000283 -0.03749999999999909 0</Position>
+<Axis>1 -1.4869058365515493e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>demo_leg_lower-1</Uid>
+</InstancePath>
+<Position>-0.017460000000000031 1.8088000000000004 -1.1102230246251565e-16</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>demo_leg_upper-1</Uid>
+</InstancePath>
+<Position>-0.019460000000000283 -0.03749999999999909 0</Position>
+<Axis>1 -1.4869058365515493e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>demo_leg_lower-1</Uid>
+</InstancePath>
+<Position>-0.017460000000000031 1.8088000000000004 -1.1102230246251565e-16</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Tangent name="Tangent2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>demo_leg_upper-1</Uid>
+</InstancePath>
+<Position>-0.017460000000000003 0.012500000000000844 -0.017459999999999976</Position>
+<Axis>1 1.4869058365515486e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>demo_leg_lower-1</Uid>
+</InstancePath>
+<Position>0 1.8288000000000004 -1.1102230246251565e-16</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Tangent>
+<Tangent name="Tangent3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>demo_leg_chassis-1</Uid>
+</InstancePath>
+<Position>-0.017459999999939191 -0.095040000000000013 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>demo_leg_upper-1</Uid>
+</InstancePath>
+<Position>0 1.8288000000000002 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Tangent>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="demo_leg_chassis" uid="demo_leg_chassis*:*Default" version="425">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="demo_leg_chassis.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.86443256607880814</Mass>
+<CenterOfMass>7.589704215434253e-16 -0.00068348463120207297 0.97796154431695514</CenterOfMass>
+<Inertia>0.27334521882878121 0.27333957573301043 0.00070477609973867224 0.00043238422636625778 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="demo_leg_chassis_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="demo_leg_lower" uid="demo_leg_lower*:*Default" version="154">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="demo_leg_lower.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.19451900858455512</Mass>
+<CenterOfMass>3.5218773124734525e-08 0.91273089653552519 3.5223651263065427e-08</CenterOfMass>
+<Inertia>0.054052565744624054 5.6000503562430157e-05 0.0540524716409298 -4.9006276355647007e-09 -8.9098714122704556e-11 -4.9364204043930929e-09</Inertia>
+</MassProperties>
+<GeometryFile name="demo_leg_lower_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="demo_leg_upper" uid="demo_leg_upper*:*Default" version="131">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="demo_leg_upper.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.20320702186598763</Mass>
+<CenterOfMass>1.9953200528377373e-06 0.87262970833622999 -6.5657442030937871e-08</CenterOfMass>
+<Inertia>0.061352100878372694 5.9970203776789513e-05 0.061354011323052293 5.9140946072699901e-11 -6.3741216778894645e-10 -2.2844823041473787e-08</Inertia>
+</MassProperties>
+<GeometryFile name="demo_leg_upper_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

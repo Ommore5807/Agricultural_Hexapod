@@ -1,0 +1,33 @@
+% %inverse kinematics agricultural robot leg
+
+
+clear all
+clc
+
+%Initialize time step 
+t = [0:0.1:59.9]'
+t2=[0:0.1:59.9]'
+l1 = 1.8288;% length of link 1
+l2 = 1.8288;% length of link 2
+
+%Define trajectory to be used 
+theta = linspace(0,pi,100);
+r =0.125;
+h = 3.1676;
+z = h- r*sin(theta);
+x = ( r*cos(theta)-r);
+
+thetad2 = -real((acos((x.^2+z.^2-l1^2-l2^2)/(2*l1*l2))))
+thetad1 = real(atan(x./z) - atan(l2 *sin(thetad2) ./ (l1 + l2*cos(thetad2))))
+
+matrixl1 = ones(1, 100)*(pi*25.1765/180)
+matrixl2 = ones(1, 100) *(-59.3783*pi/180)
+
+theta1  = [thetad1, matrixl1,thetad1, matrixl1,thetad1, matrixl1 ];
+theta2  = [thetad2, matrixl2,thetad2, matrixl2,thetad2, matrixl2 ];
+
+matrix1 = ones(1, 100) *pi/6;
+matrix2 = ones(1,100)*(-pi/3);
+thetal1 = [matrix1, thetad1,matrix1, thetad1,matrix1, thetad1];
+thetal2 = [matrix2, thetad2, matrix2, thetad2,matrix2, thetad2];
+plot(x,z)
